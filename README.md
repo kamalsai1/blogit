@@ -2,6 +2,10 @@
 
 BlogIt is a React.js application that allows users to create and share their blogs with the community. This mini blogging platform provides a simple and intuitive interface for users to write and publish their thoughts, stories, and ideas.
 
+Deployed website:
+frontend: `https://blogit-frontend.onrender.com`
+backend: `https://blogit-backend-tmf9.onrender.com`
+
 ## Table of Contents
 
 - [Features](#features)
@@ -60,6 +64,7 @@ Before you begin, ensure you have the following installed:
    ```
 
 5. Open your browser and navigate to `http://localhost:3000` to see BlogIt in action while developing.
+6. Also the backend is running at `http://localhost:5001`
 
 ## Usage
 
