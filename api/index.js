@@ -35,7 +35,7 @@ const app = express();
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Update with the actual origin of your client
+  origin: 'https://blogit-frontend.onrender.com', // Update with the actual origin of your client
   credentials: true, // Allow credentials (cookies, in this case) to be sent with the request
 }));
 const port = process.env.PORT || 5001;
