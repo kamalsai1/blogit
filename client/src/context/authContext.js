@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
         const res = await axios.post('https://blogit-backend-tmf9.onrender.com/api/users/login', data,{withCredentials:true});
         if(res.status===200){
             console.log(res.data);
-            Cookies.set('access_token', res.data.token, { expires: 7, path: '/' });
+            Cookies.set('access_token', res.data.token, { expires: 2, path: '/' });
             setIsLoggedIn(true);
             setUser(res.data.user);
         }

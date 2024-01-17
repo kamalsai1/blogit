@@ -47,7 +47,7 @@ const loginUser = asyncHandler(async (req, res) => {
                 password: user.password,
                 id: user._id,
             }
-        }, process.env.JWT_SECRET, { expiresIn: "10000m" });
+        }, process.env.JWT_SECRET, { expiresIn: "60m" });
 
         // res.setHeader('Set-Cookie', cookie.serialize('access_token', token, { httpOnly: true, secure: true, path: '/', expires: new Date(Date.now() + 900000)}));
 
