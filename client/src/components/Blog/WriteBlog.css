@@ -1,0 +1,54 @@
+.crtBlog {
+    background-color: #1e1c1c;
+
+    .WriterClass {
+        padding: 20px;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-center;
+        display: flex;
+        flex-direction: column;
+
+        form {
+            display: flex;
+            width: 75%;
+            min-height: 60%;
+            flex-direction: column;
+            background-color: #ebe8e3;
+            padding: 50px;
+            gap: 20px;
+        }
+
+        input {
+            padding: 10px;
+            border: none;
+            border-bottom: #1e1c1c;
+        }
+
+        .subButton {
+            padding: 10px;
+            border: none;
+            background-color: #1e1c1c;
+            color: white;
+            cursor: pointer;
+            width: 50px;
+        }
+
+        .editorContainer {
+            height: 300px;
+            overflow: scroll;
+            border: 1px solid #1e1c1c;
+
+            .editor1 {
+                height: 100%;
+                border: 1px solid #1e1c1c;
+                background-color: white;
+            }
+        }
+
+        .file {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
