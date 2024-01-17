@@ -16,7 +16,7 @@ const Blog = (props) => {
     console.log(user)
     const token = Cookies.get('access_token');
     const DeleteBlog = async() => {
-        await axios.post(`http://localhost:5001/api/blogs/delBlog/${props.blogId}`,{data: {}, token:token}).then((res) => {
+        await axios.post(`https://blogit-backend-tmf9.onrender.com/api/blogs/delBlog/${props.blogId}`,{data: {}, token:token}).then((res) => {
             if (res.status === 200) {
                 console.log(res);
                 // alert("Login Successful");

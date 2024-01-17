@@ -20,7 +20,7 @@ const UpdateBlog = () => {
     useEffect(() => {
         const fetchData = async () => {
             console.log("this is at update blog ",id)
-            await axios.get(`http://localhost:5001/api/blogs/getBlogbyId/${id}`).then((res) => {
+            await axios.get(`https://blogit-backend-tmf9.onrender.com/api/blogs/getBlogbyId/${id}`).then((res) => {
                 if (res.status === 200) {
                     console.log(res);
                     setData(res.data);
@@ -49,7 +49,7 @@ const UpdateBlog = () => {
         console.log(blogData);
 
         const token = await Cookies.get('access_token');
-        await axios.put(`http://localhost:5001/api/blogs/updateBlog/${id}`, { data: blogData, token: token }).then((res) => {
+        await axios.put(`https://blogit-backend-tmf9.onrender.com/api/blogs/updateBlog/${id}`, { data: blogData, token: token }).then((res) => {
             if (res.status === 200) {
                 console.log(res);
                 // alert("Login Successful");

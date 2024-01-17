@@ -52,7 +52,7 @@ const WriteBlog = () => {
     console.log(blogData);
 
     const token = await Cookies.get('access_token');
-    await axios.post(`http://localhost:5001/api/blogs/createBlog/${user._id}`, { data: blogData, token: token }).then((res) => {
+    await axios.post(`https://blogit-backend-tmf9.onrender.com/api/blogs/createBlog/${user._id}`, { data: blogData, token: token }).then((res) => {
       if (res.status === 200) {
         console.log(res);
         // alert("Login Successful");

@@ -14,7 +14,7 @@ const RegisterPage = () => {
     const formSubmitter = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`http://localhost:5001/api/users/register`, data);
+            const res = await axios.post(`https://blogit-backend-tmf9.onrender.com/api/users/register`, data);
             // alert("Registration Successful")
             navigate('/login');
         }

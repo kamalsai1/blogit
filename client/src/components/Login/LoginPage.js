@@ -24,7 +24,7 @@ const LoginPage = () => {
       console.log(error);
       alert("Login Failed");
     }
-      // await axios.post(`http://localhost:5001/api/users/login`,data,{withCredentials:true}).then((res)=>{
+      // await axios.post(`https://blogit-backend-tmf9.onrender.com/api/users/login`,data,{withCredentials:true}).then((res)=>{
       //   if(res.status===200){
       //     // alert("Login Successful");
       //     navigate('/');

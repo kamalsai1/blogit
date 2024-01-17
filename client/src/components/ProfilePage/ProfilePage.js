@@ -13,7 +13,7 @@ const ProfilePage = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            axios.post(`http://localhost:5001/api/blogs/getBlogbyUser/${user._id}`,{token:Cookies.get('access_token')})
+            axios.post(`https://blogit-backend-tmf9.onrender.com/api/blogs/getBlogbyUser/${user._id}`,{token:Cookies.get('access_token')})
             .then(response => {
                 // Handle the response, which contains the blogs for the user
                 setBlogs(response.data);

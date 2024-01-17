@@ -14,14 +14,14 @@ const BlogPage = () => {
     async function fetchData() {
       try {
         console.log(id);
-        await axios.get(`http://localhost:5001/api/blogs/getBlogbyId/${id}`).then((res) => {
+        await axios.get(`https://blogit-backend-tmf9.onrender.com/api/blogs/getBlogbyId/${id}`).then((res) => {
           console.log(res.data);
           setBlogDetails(res.data);
           const det = res.data;
           async function fetchData1() {
             try {
               console.log(det.userid);
-              await axios.get(`http://localhost:5001/api/users/getUserbyId/${det.userid}`).then((res) => {
+              await axios.get(`https://blogit-backend-tmf9.onrender.com/api/users/getUserbyId/${det.userid}`).then((res) => {
                 console.log(res.data);
                 setUserDetails(res.data);
               }
@@ -46,7 +46,7 @@ const BlogPage = () => {
   //   async function fetchData() {
   //     try {
   //       console.log(blogDetails.userid);
-  //       await axios.get(`http://localhost:5001/api/users/getUserbyId/${blogDetails.userid}`).then((res) => {
+  //       await axios.get(`https://blogit-backend-tmf9.onrender.com/api/users/getUserbyId/${blogDetails.userid}`).then((res) => {
   //         console.log(res.data);
   //         setUserDetails(res.data);
   //       }

@@ -9,7 +9,7 @@ import img3 from './img3.jpeg'
 const Home = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:5001/api/blogs/getAllBlogs').then((response) => {
+    axios.get('https://blogit-backend-tmf9.onrender.com/api/blogs/getAllBlogs').then((response) => {
       setBlogs(response.data);
     }
     );

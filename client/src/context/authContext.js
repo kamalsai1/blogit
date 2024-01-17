@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')) || null);
     const [isloggedIn, setIsLoggedIn] = useState(user!=null);
     const login = async (data) => {
-        const res = await axios.post('http://localhost:5001/api/users/login', data,{withCredentials:true});
+        const res = await axios.post('https://blogit-backend-tmf9.onrender.com/api/users/login', data,{withCredentials:true});
         if(res.status===200){
             console.log(res.data);
             Cookies.set('access_token', res.data.token, { expires: 7, path: '/' });
@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     const logout = async() => {
-        // const res = await axios.post('http://localhost:5001/api/users/logout');
+        // const res = await axios.post('https://blogit-backend-tmf9.onrender.com/api/users/logout');
         Cookies.remove('access_token');
         setIsLoggedIn(false);
         setUser(null);

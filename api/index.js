@@ -20,7 +20,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:5001/api"
+        url: "https://blogit-backend-tmf9.onrender.com/api"
       }
     ],
   },

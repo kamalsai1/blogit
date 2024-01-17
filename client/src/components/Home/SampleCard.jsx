@@ -18,7 +18,7 @@ const SampleCard = (props) => {
 
   const [userDet,setUserDet] = React.useState({});
   React.useEffect(()=>{
-    axios.get(`http://localhost:5001/api/users/getUserbyId/${props.userid}`).then((res)=>{
+    axios.get(`https://blogit-backend-tmf9.onrender.com/api/users/getUserbyId/${props.userid}`).then((res)=>{
       setUserDet(res.data);
     }
     )
