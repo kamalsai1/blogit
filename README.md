@@ -74,11 +74,22 @@ Before you begin, ensure you have the following installed:
 4. **User Profile**: Check out your user profile to see a list of blogs you've published.
 
 Webpage Preview
+Home Page
 ![blogit-home-page](https://github.com/kamalsai1/blogit/assets/98586894/285768e0-796a-4bfa-93c7-861b5503b1c2)
+
+Login Page
 ![blogit-loginpage](https://github.com/kamalsai1/blogit/assets/98586894/eaace2cd-a9a9-4074-8d29-c034bf2714ec)
+
+Register page
 ![blogit-registerpage](https://github.com/kamalsai1/blogit/assets/98586894/58a05e82-2583-47db-937c-16b3c4738007)
+
+Profile page
 ![blogit-profile-page](https://github.com/kamalsai1/blogit/assets/98586894/50b37c9d-b18b-4a24-8fa7-8c934046e8ec)
+
+View Blog
 ![blogit-blogpage](https://github.com/kamalsai1/blogit/assets/98586894/da915075-bbea-4da0-91f4-7f68435d2563)
+
+Create Blog
 ![blogit-createblog](https://github.com/kamalsai1/blogit/assets/98586894/d86195e2-3b59-4868-a33d-805985b597be)
 
 
